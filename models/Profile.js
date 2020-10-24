@@ -97,6 +97,9 @@ const ProfileSchema = new mongoose.Schema({
     linkedin: {
       type: String,
     },
+    twitter: {
+      type: String,
+    },
     instagram: {
       type: String,
     },
@@ -107,4 +110,4 @@ const ProfileSchema = new mongoose.Schema({
   },
 });
 
-module.exports = Profile = mongoose.model();
+module.exports = Profile = mongoose.model("profile", ProfileSchema);
