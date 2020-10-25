@@ -8,7 +8,7 @@ const PostSchema = new Schema({
   },
   text: {
     type: String,
-    required: ture,
+    required: true,
   },
   name: {
     type: String,
@@ -32,7 +32,7 @@ const PostSchema = new Schema({
       },
       text: {
         type: String,
-        required: ture,
+        required: true,
       },
       name: {
         type: String,
