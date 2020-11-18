@@ -50,7 +50,7 @@ export const getProfiles = () => async (dispatch) => {
 export const getProfileById = (userId) => async (dispatch) => {
   dispatch({ type: CLEAR_PROFILE });
   try {
-    const res = await axios.get(`api/profile/user/${userId}`);
+    const res = await axios.get(`/api/profile/user/${userId}`);
 
     dispatch({
       type: GET_PROFILE,
@@ -67,7 +67,7 @@ export const getProfileById = (userId) => async (dispatch) => {
 // Get Github repos
 export const getGithubRepos = (username) => async (dispatch) => {
   try {
-    const res = await axios.get(`api/profile/github/${username}`);
+    const res = await axios.get(`/api/profile/github/${username}`);
 
     dispatch({
       type: GET_REPOS,
